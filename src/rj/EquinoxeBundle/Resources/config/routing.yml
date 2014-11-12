@@ -1,0 +1,8 @@
+rj_equinoxe_homepage:
+    path:     /accueil
+    defaults: { _controller: rjEquinoxeBundle:Equinoxe:index }
+
+rj_equinoxe_contact:
+    path:     /contact
+    defaults: { _controller: rjEquinoxeBundle:Equinoxe:contact }
+

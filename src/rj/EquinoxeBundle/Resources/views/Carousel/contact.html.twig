@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{{ asset('favicon.png') }}">
+
+    <title>Equinoxe coaching</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand logonav" href="{{path('rj_equinoxe_homepage')}}"><img class="logoimg" src="{{ asset('images/logotop.png') }}" alt="logo equinoxe"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="{{path('rj_equinoxe_homepage')}}">Accueil</a></li>
+                <li class="active"><a href="{{path('rj_equinoxe_contact')}}">Contact</a></li>
+                <li><a href="#perso">Qui suis-je?</a></li>
+                <li><a href="#sport">Sport</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#tarif">Tarifs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+     
+      
+        <div class="">
+          <img src="{{ asset('images/fond.jpg') }}" alt="First slide">
+          <div class="carousel-caption">
+              <h1>Contactez moi.</h1>
+              <p>Pour tout information suplémentaire, demande particulière ou autre veuillez me contacter à l'adresse suivante: </br>
+                <a href="mailto:info@equinoxe-coaching.fr"><code>info@equinoxe-coaching.fr</code></a></p>
+            </div>
+        </div>
+        </div><!-- /.carousel -->
+        <div class="container">
+          <div class="row marketing">
+            <div class="col-lg-8 formulaire">
+            <form action="{{ path('rj_equinoxe_contact') }}" method="post" {{ form_enctype(form) }}>
+
+            {{ form_label(form.email) }}
+            {{ form_errors(form.email) }}
+            {{ form_widget(form.email) }}
+
+            {{ form_label(form.subject) }}
+            {{ form_errors(form.subject) }}
+            {{ form_widget(form.subject) }}
+
+            {{ form_label(form.content) }}
+            {{ form_errors(form.content) }}
+            {{ form_widget(form.content) }}
+
+              <input type="submit" value="Envoyer" class="form-control boutonform" />
+            </form>
+            </div>
+          </div>   
+        </div>    
+
+        
+      
+    
+
+
+
+    <!-- 
+    ================================================== -->
+  
+
+    <div class="container marketing">
+      <hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Retour haut de page</a></p>
+        <p>&copy; 2014 Equinoxe caoching &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/docs.min.js') }}"></script>
+  </body>
+</html>

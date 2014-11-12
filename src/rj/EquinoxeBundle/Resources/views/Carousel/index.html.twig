@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{{ asset('favicon.png') }}">
+
+    <title>Equinoxe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand logonav" href="{{path('rj_equinoxe_homepage')}}"><img class="logoimg" src="{{ asset('images/logotop.png') }}" alt="logo equinoxe"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="{{path('rj_equinoxe_homepage')}}">Accueil</a></li>
+                <li><a href="{{path('rj_equinoxe_contact')}}">Contact</a></li>
+                <li><a href="#perso">Qui suis-je?</a></li>
+                <li><a href="#sport">Sport</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#tarif">Tarifs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="{{ asset('images/slider2.jpg') }}" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+             <!--< <h1>Equinoxe</h1>
+              <p>Accompagnement sportif et nutritionnel à domicile.</p>-->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{{ asset('images/slider1.jpg') }}" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <!--<<h1>Le sport plaisir</h1>
+              <p> Horaires à la carte.</br>
+                  Contenu en fonction de vos attentes.</br>
+                  Un programme personnalisé avec un coach sportif diplômmé.</p>-->
+              <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Voir plus</a></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="pastille" href="#sport"><img class="img-circle" src="{{ asset('images/sport.png') }}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Sport</h2></a>
+          <p>Développer vos capacités physiques avec un encadrement profesionel au rythme de vos envies. Le sport est plaisir sans contraintes.</p>
+          <p><a class="btn btn-default" href="#sport" role="button">Voir plus &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <a class="pastille" href="#nutrition"><img class="img-circle" src="{{ asset('images/nutrition.png') }}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Nutrition</h2></a>
+          <p>Accompagnement nutritionel adapté à vos besoins pour réaliser vos objectifs en consiliant perte de poids et bien être.</p>
+          <p><a class="btn btn-default" href="#nutrition" role="button">Voir plus &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <a class="pastille" href=""><img class="img-circle" src="{{ asset('images/bien-etre.png') }}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <h2>Bien-être</h2></a>
+          <p>Parce que prendre soin de soi et la base du bien être physique et émotionel, Equinoxe vous propose la solution pour y parvenir.</p>
+          
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div id="perso" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Votre<span class="text-muted"> coach personnel.</span></h2>
+          <h3>Mes qualifications</h3>
+          <p class="lead">Licence en Sciences et Technologies des Activités Sportives 
+          BEESAN (diplômme de maîttre nageur)</br>
+          SBAN (sauveteur en mer)</br>
+          PSE2 diplome de secouriste </br>
+          DUT Génie Biologique option diététique</p>
+          <h3>Expériences professionnels et sportives</h3>
+          <p class="lead">nageur de haut niveau pendant 10 ans </br>
+                    Pratique de la boxe et du rugby</br>
+                    sapeur pompier</br>
+                    entraineur principal d’un club de natation</p>
+          <h3>Mes aptitudes</h3>
+          <p class="lead">perte de poids</br>
+                    prise de masse musculaire</br>
+                    confiance en soi</br>
+                    préparation sportive(armée, pompier, ...)</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="{{ asset('images/image.jpg') }}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="sport" class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="{{ asset('images/image.jpg') }}" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Sport <span class="text-muted">et plaisir</span></h2>
+          <p class="lead">Je m’adapterai à vos envies, vos capacités et à vos objectifs pour vous garantir des séances variées et dynamiques. L’objectif étant de vous donner l’envie et le goût de l’effort physique pour vous dépasser un peu plus chaque jour. Pour les sportifs accomplis souhaitant préparer un objectif, je m’adapterai à vos échéances compétitives pour faire en sorte que vous soyez le plus performant possible le moment voulu.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="nutrition" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Suivi <span class="text-muted">dietetique</span></h2>
+          <p class="lead">Quelques soient vos objectifs, dans un premier temps je vais essayer de cibler vos habitudes de vie lors du premier entretien via un questionnaire très complet qui me permettra de mieux vous connaître. Il faudra répondre de la façon la plus honnête possible pour que je puisse répondre à vos envies plus rapidement et efficacement.</br>
+          A aucun moment je ne vais vous parler de régime, mon rôle sera de moduler votre balance énergétique pour atteindre les objectifs que l’on aura déterminés ensemble. La restriction ou le comptage des calories par repas ne font pas parti de mes méthodes de travail. Ces techniques complexes à suivre et à tenir dans la durée ont des résultats très discutables. 
+</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="{{ asset('images/image.jpg') }}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      
+
+     
+      <div id="tarif" class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="{{ asset('images/image.jpg') }}" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Mes offres <span class="text-muted">et mes tarifs</span></h2>
+          <p class="lead">Pour plus d'information sur les offres et les tarifs, contactez moi.</p>
+          <a href="">Cliker ici pour consulter mes offres et tarifs</a>
+        </div>
+      </div>
+ <!-- /END THE FEATURETTES -->
+      <!-- FOOTER -->
+      
+    <div class="container marketing">
+      <hr class="featurette-divider">
+      <footer>
+        <p class="pull-right"><a href="#">Retour haut de page</a></p>
+        <p>&copy; 2014 Equinoxe caoching &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/docs.min.js') }}"></script>
+    <script type="text/javascript">
+      function juizScrollTo(element){     
+        $(element).click(function(){
+          var goscroll = false;
+          var the_hash = $(this).attr("href");
+          var regex = new RegExp("\#(.*)","gi");
+          var the_element = '';
+       
+          if(the_hash.match("\#(.+)")) {
+            the_hash = the_hash.replace(regex,"$1");
+       
+            if($("#"+the_hash).length>0) {
+              the_element = "#" + the_hash;
+              goscroll = true;
+            }
+            else if($("a[name=" + the_hash + "]").length>0) {
+              the_element = "a[name=" + the_hash + "]";
+              goscroll = true;
+            }
+       
+            if(goscroll) {
+              $('html, body').animate({
+                scrollTop:$(the_element).offset().top
+              }, 'slow');
+              return false;
+            }
+          }
+        });         
+      };
+      juizScrollTo('a[href^="#"]');
+    </script>
+  </body>
+</html>

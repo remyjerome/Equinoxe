@@ -1,0 +1,4 @@
+rj_equinoxe:
+    resource: "@rjEquinoxeBundle/Resources/config/routing.yml"
+    prefix:   /
+
